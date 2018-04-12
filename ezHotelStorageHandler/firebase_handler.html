@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://developer.chrome.com/extensions/examples/tutorials/getstarted/popup.html -->
+<html>
+  <!--  -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- title of popup -->
+  <p id="title">EzHotel Storage Handler</p>
+  <style type="text/css">
+
+  </style>
+
+  <style></style>
+</head>
+
+<body>
+  <!-- html of popup: images dymaically added to buttons from the profile(inside "athena-icon") -->
+
+<h3>Choose (multiple) files from your pc and press 'upload files' to upload them to the firebase storage. Their path will be
+    their name </h3>
+<div>
+    <input type="file" id="files" name="files[]" multiple />
+    <output id="list"></output>
+</div>
+<div>
+    <button id="bt_upload">upload files</button>
+</div>
+<!-- <div>
+    <button id="bt_show_files">show all files on storage root dir</button>
+</div>
+<div>
+    <output id="show_files_list"></output>
+</div>
+ -->
+
+</body>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<!-- <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCMQkUdrshrN6ucwiO0JdMtNlqDgdw7UyM",
+    authDomain: "ezhotel-adb0d.firebaseapp.com",
+    databaseURL: "https://ezhotel-adb0d.firebaseio.com",
+    projectId: "ezhotel-adb0d",
+    storageBucket: "ezhotel-adb0d.appspot.com",
+    messagingSenderId: "889498084939"
+  };
+  firebase.initializeApp(config);
+
+  
+var defaultStorage = firebase.storage();
+var defaultDatabase = firebase.database();
+defaultDatabase.ref().child('test').set("test result");
+</script> -->
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-storage.js"></script>
+<script src="./firebase_handler.js"></script>
+
+</html>
